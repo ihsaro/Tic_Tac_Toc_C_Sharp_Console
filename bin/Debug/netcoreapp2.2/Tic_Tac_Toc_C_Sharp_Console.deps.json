@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Tic_Tac_Toc_C_Sharp_Console/1.0.0": {
+        "runtime": {
+          "Tic_Tac_Toc_C_Sharp_Console.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tic_Tac_Toc_C_Sharp_Console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

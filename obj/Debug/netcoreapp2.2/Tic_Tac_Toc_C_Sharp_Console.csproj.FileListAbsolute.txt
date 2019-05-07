@@ -1,0 +1,11 @@
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.csprojAssemblyReference.cache
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.csproj.CoreCompileInputs.cache
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.AssemblyInfoInputs.cache
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.AssemblyInfo.cs
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/bin/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.deps.json
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/bin/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.runtimeconfig.json
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/bin/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.runtimeconfig.dev.json
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/bin/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.dll
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/bin/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.pdb
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.dll
+/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/Debug/netcoreapp2.2/Tic_Tac_Toc_C_Sharp_Console.pdb
