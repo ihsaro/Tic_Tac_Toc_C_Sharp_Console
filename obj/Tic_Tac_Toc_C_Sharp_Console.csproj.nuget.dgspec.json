@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/Tic_Tac_Toc_C_Sharp_Console.csproj": {}
+  },
+  "projects": {
+    "/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/Tic_Tac_Toc_C_Sharp_Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/Tic_Tac_Toc_C_Sharp_Console.csproj",
+        "projectName": "Tic_Tac_Toc_C_Sharp_Console",
+        "projectPath": "/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/Tic_Tac_Toc_C_Sharp_Console.csproj",
+        "packagesPath": "/home/idjaz/.nuget/packages/",
+        "outputPath": "/home/idjaz/git/Tic_Tac_Toc_C_Sharp_Console/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/idjaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
