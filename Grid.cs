@@ -40,6 +40,22 @@ namespace Tic_Tac_Toc_C_Sharp_Console
         // Checking if winning condition arises
         public bool CheckWin()
         {
+            if(grid[0] == character && grid[1] == character && grid[2] == character)
+                return true;
+            if(grid[3] == character && grid[4] == character && grid[5] == character)
+                return true;
+            if(grid[6] == character && grid[7] == character && grid[8] == character)
+                return true;
+            if(grid[0] == character && grid[3] == character && grid[6] == character)
+                return true;
+            if(grid[1] == character && grid[4] == character && grid[7] == character)
+                return true;
+            if(grid[2] == character && grid[5] == character && grid[8] == character)
+                return true;
+            if(grid[0] == character && grid[4] == character && grid[8] == character)
+                return true;
+            if(grid[2] == character && grid[4] == character && grid[6] == character)
+                return true;
             return false;
         }
 
@@ -54,6 +70,18 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                 }
             }
             return true;
+        }
+
+        public String GetWinningPlayer()
+        {
+            if(character == 'O')
+            {
+                return "Player 1";
+            }
+            else
+            {
+                return "Player 2";
+            }
         }
     }
 }

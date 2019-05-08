@@ -16,7 +16,7 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                 Grid grid = new Grid();
                 grid.DisplayGrid();
 
-                do {
+                while(true) {
                     if(oTurn)
                     {
                         grid.SetCharacter('O');
@@ -29,6 +29,16 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                     }
                     positionInput = Convert.ToInt32(Console.ReadLine());
                     grid.InsertElementIntoGrid(positionInput);
+                    if(grid.CheckWin())
+                    {
+                        Console.WriteLine("Player {0} has won!\n", grid.GetWinningPlayer());    
+                        break;
+                    }
+                    else if(grid.CheckDraw())
+                    {
+                        Console.WriteLine("Draw\n");
+                        break;
+                    }
                     grid.DisplayGrid();
                     if(oTurn)
                     {
@@ -38,9 +48,8 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                     {
                         oTurn = true;
                     }
-                } while(!grid.CheckDraw());
+                }
                 
-                Console.WriteLine("Player {0} has won!");
                 while(true)
                 {
                     Console.Write("New Game (Y/N): ");
