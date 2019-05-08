@@ -10,6 +10,7 @@ namespace Tic_Tac_Toc_C_Sharp_Console
             char newGame;
             bool oTurn = true;
             int positionInput;
+            Console.WriteLine("Welcome to Tic-Tac-Toe!");
             do
             {
                 newGame = ' ';
@@ -29,6 +30,7 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                     }
                     positionInput = Convert.ToInt32(Console.ReadLine());
                     grid.InsertElementIntoGrid(positionInput);
+                    grid.DisplayGrid();
                     if(grid.CheckWin())
                     {
                         Console.WriteLine("Player {0} has won!\n", grid.GetWinningPlayer());    
@@ -39,7 +41,6 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                         Console.WriteLine("Draw\n");
                         break;
                     }
-                    grid.DisplayGrid();
                     if(oTurn)
                     {
                         oTurn = false;
