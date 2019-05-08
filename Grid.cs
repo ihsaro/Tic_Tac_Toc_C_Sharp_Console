@@ -13,9 +13,10 @@ namespace Tic_Tac_Toc_C_Sharp_Console
         {
             character = 'O';
             grid = new char[9];
-            for(int i = 0; i < 9; i++)
+            for(int i = 0; i < grid.Length; i++)
             {
-                grid[i] = 'X';
+                char[] c = (i + 1).ToString().ToCharArray();
+                grid[i] = c[0];
             }
         }
 
@@ -33,13 +34,26 @@ namespace Tic_Tac_Toc_C_Sharp_Console
         // Inserts O or X in the grid
         public void InsertElementIntoGrid(int position)
         {
-            grid[position] = this.character;
+            grid[position - 1] = this.character;
         }
 
         // Checking if winning condition arises
         public bool CheckWin()
         {
             return false;
+        }
+
+        // Checking if draw condition arises
+        public bool CheckDraw()
+        {
+            for(int i = 0; i < grid.Length; i++)
+            {
+                if(grid[i] != 'O' && grid[i] != 'X')
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

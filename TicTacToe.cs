@@ -15,18 +15,32 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                 newGame = ' ';
                 Grid grid = new Grid();
                 grid.DisplayGrid();
-                if(oTurn)
-                {
-                    grid.SetCharacter('O');
-                    Console.Write("Player 1 (O): ");
-                }
-                else
-                {
-                    grid.SetCharacter('X');
-                    Console.Write("Player 2 (X): ");
-                }
-                positionInput = Convert.ToInt32(Console.ReadLine());
 
+                do {
+                    if(oTurn)
+                    {
+                        grid.SetCharacter('O');
+                        Console.Write("Player 1 (O): ");
+                    }
+                    else
+                    {
+                        grid.SetCharacter('X');
+                        Console.Write("Player 2 (X): ");
+                    }
+                    positionInput = Convert.ToInt32(Console.ReadLine());
+                    grid.InsertElementIntoGrid(positionInput);
+                    grid.DisplayGrid();
+                    if(oTurn)
+                    {
+                        oTurn = false;
+                    }
+                    else
+                    {
+                        oTurn = true;
+                    }
+                } while(!grid.CheckDraw());
+                
+                Console.WriteLine("Player {0} has won!");
                 while(true)
                 {
                     Console.Write("New Game (Y/N): ");
