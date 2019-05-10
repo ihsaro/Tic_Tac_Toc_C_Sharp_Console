@@ -28,29 +28,38 @@ namespace Tic_Tac_Toc_C_Sharp_Console
                         grid.SetCharacter('X');
                         Console.Write("Player 2 (X): ");
                     }
-                    positionInput = Convert.ToInt32(Console.ReadLine());
-                    grid.InsertElementIntoGrid(positionInput);
-                    grid.DisplayGrid();
-                    if(grid.CheckWin())
+                    try
                     {
-                        Console.WriteLine("Player {0} has won!\n", grid.GetWinningPlayer());    
-                        break;
+                        positionInput = Convert.ToInt32(Console.ReadLine());
+                        grid.InsertElementIntoGrid(positionInput);
+                        if(grid.CheckWin())
+                        {
+                            Console.WriteLine("Player {0} has won!\n", grid.GetWinningPlayer());    
+                            break;
+                        }
+                        else if(grid.CheckDraw())
+                        {
+                            Console.WriteLine("Draw\n");
+                            break;
+                        }
+                        if(oTurn)
+                        {
+                            oTurn = false;
+                        }
+                        else
+                        {
+                            oTurn = true;
+                        }
                     }
-                    else if(grid.CheckDraw())
+                    catch(FormatException fe)
                     {
-                        Console.WriteLine("Draw\n");
-                        break;
+                        Console.WriteLine("Please input a digit only");
                     }
-                    if(oTurn)
+                    finally
                     {
-                        oTurn = false;
-                    }
-                    else
-                    {
-                        oTurn = true;
+                        grid.DisplayGrid();
                     }
                 }
-                
                 while(true)
                 {
                     Console.Write("New Game (Y/N): ");

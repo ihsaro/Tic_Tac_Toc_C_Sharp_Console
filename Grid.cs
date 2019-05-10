@@ -34,7 +34,14 @@ namespace Tic_Tac_Toc_C_Sharp_Console
         // Inserts O or X in the grid
         public void InsertElementIntoGrid(int position)
         {
-            grid[position - 1] = this.character;
+            try
+            {
+                grid[position - 1] = this.character;
+            }
+            catch(IndexOutOfRangeException ioore)
+            {
+                Console.WriteLine("Invalid input, please try again!");
+            }
         }
 
         // Checking if winning condition arises
