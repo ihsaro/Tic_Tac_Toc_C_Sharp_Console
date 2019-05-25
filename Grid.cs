@@ -36,7 +36,10 @@ namespace Tic_Tac_Toc_C_Sharp_Console
         {
             try
             {
-                grid[position - 1] = this.character;
+                if(grid[position - 1] != 'O' && grid[position - 1] != 'X')
+                    grid[position - 1] = this.character;
+                else
+                    Console.WriteLine("Slot taken, please try again!");
             }
             catch(IndexOutOfRangeException ioore)
             {
